@@ -7,8 +7,14 @@ body {
 
   @font-face {
     font-family: 'LibreFranklin';
-    src: url(../fonts/LibreFranklin-Thin.ttf) format('truetype');
+    src: url(fonts/LibreFranklin-Thin.ttf) format('truetype');
 }
+
+  @font-face {
+    font-family: 'LibreFranklinBold';
+    src: url(fonts/LibreFranklin-VariableFont_wght.ttf) format('truetype');
+}
+
 
 
   @keyframes fadeIn {
@@ -29,27 +35,33 @@ body {
     margin-bottom: 7px;
   }
 
+  p {
+    font-family: LibreFranklinBold;
+  }
+
 
   
 .buy-button {
-  border: 1px solid rgba(0, 5, 4, 0.644);
-  background-color: rgb(255, 255, 255);
+  border: 0.5px solid rgba(15, 1, 1, 0.438);
+  background-color: rgb(10,177,240);
   font-weight: 200;
   font-size: 16px;
+  font-family: LibreFranklinBold;
   animation: fadeIn 3s;
   max-width: fit-content;
   border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 1s ease, color 0.5s ease;
+  box-shadow: 1px 5px 5px rgba(27, 27, 27, 0.521);
 }
 
 .buy-button a {
-  color: rgb(15, 2, 2);
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  transition: color 0.2s ease;
 }
 
 .buy-button:hover {
-  background-color: rgba(35, 40, 59, 0.603);
+  background-color: rgb(139,196,66);
+  transition: color 0.5s ease;
 }
 
 .buy-button:hover a {
