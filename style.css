@@ -42,16 +42,16 @@ body {
 
   
 .buy-button {
-  border: 0.5px solid rgba(15, 1, 1, 0.438);
-  background-color: rgb(10,177,240);
+  border: 2.5px solid rgb(139,196,66);
+  background-color:rgb(10,177,240);
   font-weight: 200;
   font-size: 16px;
   font-family: LibreFranklinBold;
   animation: fadeIn 3s;
   max-width: fit-content;
   border-radius: 5px;
-  transition: background-color 1s ease, color 0.5s ease;
-  box-shadow: 1px 5px 5px rgba(27, 27, 27, 0.521);
+  transition: border 1s ease, color 1s ease, background-color 2s ease;
+  box-shadow: 1px 5px 5px rgba(1, 2, 2, 0.486);
 }
 
 .buy-button a {
@@ -60,12 +60,9 @@ body {
 }
 
 .buy-button:hover {
+  border: 2.5px solid rgb(10,177,240);
   background-color: rgb(139,196,66);
-  transition: color 0.5s ease;
-}
-
-.buy-button:hover a {
-  color: rgb(247, 247, 247);
+  transition: color 1s ease;
 }
 
 
