@@ -86,30 +86,30 @@ nav {
 
 
 .carpage {
-  display: flex; /* Aktivera Flexbox */
-  align-items: flex-start; /* Justera innehåll lodrätt */
-  gap: 20px; /* Utrymme mellan bilinformation och kalkylator */
+  display: flex; 
+  align-items: flex-start; 
+  gap: 20px; 
 }
 
 #car-info {
-  flex: 2; /* Bilinformation tar mer plats */
-  max-width: 60%; /* Begränsa bredden om nödvändigt */
+  flex: 2; 
+  max-width: 60%; 
 }
 
 .calculator {
-  flex: 1; /* Kalkylator tar mindre plats */
-  max-width: 40%; /* Begränsa bredden om nödvändigt */
-  padding: 20px; /* Extra padding för stil */
-  border: 1px solid #ddd; /* En lätt ram för kalkylatorn */
-  border-radius: 8px; /* Runda hörn */
-  background-color: #f9f9f9; /* Bakgrundsfärg */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lätt skugga */
+  flex: 1; 
+  max-width: 40%; 
+  padding: 20px; 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  background-color: #f9f9f9; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 #car-info img {
-  max-width: 100%; /* Gör bilden responsiv */
-  height: auto; /* Behåll proportionerna */
-  margin-bottom: 15px; /* Avstånd under bilden */
+  max-width: 100%; 
+  height: auto; 
+  margin-bottom: 15px; 
 }
 
 #car-info h1 {
