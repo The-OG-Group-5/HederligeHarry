@@ -2,6 +2,19 @@
 
 .fw-light {
     font-size: 64px;
+    text-shadow: 1px 5px 5px rgba(1, 2, 2, 0.185);
+    font-weight: bolder;
+}
+
+.fw-light span {
+  transition: color 1s ease, text-shadow 1s ease;
+  color: rgb(8, 2, 2);
+  cursor: pointer;
+}
+
+.fw-light span:hover {
+  color: rgb(139,196,66);
+  text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.521);
 }
 
 #myCarousel, #carouselExampleFade {
