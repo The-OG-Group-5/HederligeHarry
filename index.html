@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,68 +8,46 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stylebs.css">
+   
 </head>
 <body>
 
-  
- 
-  
-
-  <nav class="navbar navbar-dark bg-dark fixed-top">
+  <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html"><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/>
-      </svg></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-success" type="submit">Search</button>
-          </form>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#collection">Browse cars</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
   </nav>
 
-  <img class="logo" src="assets/images/logo.png">
 
- 
+  <div class="logo-container">
+    <img class="logo" src="assets/images/logo.png">
+  </div>
 
-       
-         
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="container-fluid" style="overflow: visible;">
       <div class="row">
@@ -152,9 +130,10 @@
         </div>
       </div>
     </div>
-
     
-    <section class="py-5 text-center container">
+  
+    
+    <section id="collection" class="py-5 text-center container">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
           <h1 class="fw-light">Discover Luxury Redefined</h1>
@@ -165,19 +144,17 @@
     </section>
 
     <div class="container">
-
-      <div id="collection" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+     
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
           <div class="card shadow-sm">
+            <h4>Toyota Yaris GR</h4>
             <img src="./assets/images/yaris.jpg">
             <div class="card-body">
               <p class="card-text">Differential navigation transmission petrol automobile. Speedometer interstate blinker carwash solar powered. Cabriolet defogger cabriolet station wagon spider. </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">       
-                  <button type="button" class="buy-button">
-                    <a href="cars.html?id=1" class="btn btn-primary">View Details</a>
-
-                  </button>
+                    <a href="cars.html?id=1" class="buy-button">150 000 kr</a>
                 </div>       
               </div>
             </div>
@@ -186,14 +163,13 @@
 
         <div class="col">
           <div class="card shadow-sm">
+            <h4>Bugatti Chiron</h4>
             <img src="https://www.motortrend.com/uploads/2022/08/2022-Bugatti-Chiron-Super-Sport-2-1.jpg?w=768&width=768&q=75&format=webp">
             <div class="card-body">
               <p class="card-text">Tachometer dragster station wagon windshield hood. Station wagon radio high beam tachometer station wagon exhaust pipe race car. Spider supercar moped rotary engine rotary engine.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="buy-button">
-                    <a href="cars.html?id=2" class="btn btn-primary">View Details</a>
-                  </button>
+                    <a href="cars.html?id=2" class="buy-button">30 000 000 kr</a>
                 </div>
               </div>
             </div>
@@ -202,14 +178,13 @@
 
         <div class="col">
           <div class="card shadow-sm">
+            <h4>Bugatti Veyron</h4>
             <img src="./assets/images/bugatti-chiron.jpg">
             <div class="card-body">
               <p class="card-text">Taxi cab ignition campervan cross-over trunk parking sensors four-door moped drive. Hard top van bus differential highway sensor. Supercar electric car gear sedan sedan coupe seat belt.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="buy-button">
-                    <a href="cars.html?id=3" class="btn btn-primary">View Details</a>
-                  </button>
+                    <a href="cars.html?id=3" class="buy-button">25 000 000 kr</a>
                 </div>
               </div>
             </div>
@@ -220,14 +195,13 @@
 
         <div class="col">
           <div class="card shadow-sm">
+            <h4>Lamborghini Huracan</h4>
             <img src="./assets/images/lambo.jpg">
             <div class="card-body">
               <p class="card-text">sports utility vehicle low-rider. Van fuel gauge two-door taxi cab airbag. Parking sensors station wagon horsepower trunk engine auto race car. Dashboard gas powered high beam kammback highway cruiser subcompact</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="buy-button">
-                    <a href="public/checkout.html">754 999 kr</a>
-                  </button>
+                    <a class="buy-button" href="cars.html?id=4">25 000 000 kr</a>  
                 </div>
               </div>
             </div>
@@ -236,14 +210,13 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <img src="./assets/images/lambo.jpg">
+            <h4>Koenigsegg Agera RS</h4>
+            <img src="https://www.europeanprestige.co.uk/blobs/stock/579/images/b16d88a1-ab4f-4c16-b0b5-a224aa6986ac/hi4a9713.jpg">
             <div class="card-body">
-              <p class="card-text">sports utility vehicle low-rider. Van fuel gauge two-door taxi cab airbag. Parking sensors station wagon horsepower trunk engine auto race car. Dashboard gas powered high beam kammback highway cruiser subcompact</p>
+              <p class="card-text">limousine exhaust pipe radiator sunroof spark plug. Automobile hatchback brake drive tire race car parking sensors clutch fuel tank. Gear minivan rotary engine cruiser gas powered cruiser. highway cruiser subcompact</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="buy-button">
-                    <a href="cars.html?id=4" class="btn btn-primary">View Details</a>
-                  </button>
+                    <a href="cars.html?id=5" class="buy-button">25 000 000 kr</a>    
                 </div>
               </div>
             </div>
@@ -252,14 +225,13 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <img src="https://www.europeanprestige.co.uk/blobs/stock/579/images/b16d88a1-ab4f-4c16-b0b5-a224aa6986ac/hi4a9713.jpg?width=900&height=600&t=d7a06e51-49ec-474d-b218-3ed9d686cf7b">
+            <h4>Aston Martin</h4>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/mac01637-1659386919.jpg?crop=0.794xw:0.795xh;0.157xw,0.0751xh&resize=980:*">
             <div class="card-body">
               <p class="card-text">Bumper spark plug rotary engine steering wheel low-rider taxi cab. Garage bumper minivan bonnet rims gas-electric spark plug. Boot spoiler expressway street hood fuel hard top. Cabriolet tyre sensor dragster drive.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="buy-button">
-                    <a href="cars.html?id=5" class="btn btn-primary">View Details</a>
-                  </button>
+                    <a href="cars.html?id=6" class="buy-button">20 000 000 kr</a>
                 </div>
               </div>
             </div>
@@ -268,14 +240,13 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <img src="https://www.europeanprestige.co.uk/blobs/stock/579/images/b16d88a1-ab4f-4c16-b0b5-a224aa6986ac/hi4a9713.jpg?width=900&height=600&t=d7a06e51-49ec-474d-b218-3ed9d686cf7b">
+            <h4>Lamborghini Aventador</h4>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/2023_Lamborghini_Aventador_Ultimae.jpg">
             <div class="card-body">
-              <p class="card-text">Bumper spark plug rotary engine steering wheel low-rider taxi cab. Garage bumper minivan bonnet rims gas-electric spark plug. Boot spoiler expressway street hood fuel hard top. Cabriolet tyre sensor dragster drive.</p>
+              <p class="card-text">Suspension bus electric hot rod spoiler diesel windshield subcompact four-door. Race car horsepower gasoline drive interstate taxi cab. Rotary engine coupe defogger roadster two-door sports utility vehicle low-rider low-rider. </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="buy-button">
-                    <a href="cars.html?id=5" class="btn btn-primary">View Details</a>
-                  </button>
+                    <a href="cars.html?id=7" class="buy-button">25 000 000 kr</a>
                 </div>
               </div>
             </div>
@@ -284,14 +255,13 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <img src="https://www.europeanprestige.co.uk/blobs/stock/579/images/b16d88a1-ab4f-4c16-b0b5-a224aa6986ac/hi4a9713.jpg?width=900&height=600&t=d7a06e51-49ec-474d-b218-3ed9d686cf7b">
+            <h4>Ford Mustang</h4>
+            <img src="assets/images/mustang.jpg">
             <div class="card-body">
-              <p class="card-text">Bumper spark plug rotary engine steering wheel low-rider taxi cab. Garage bumper minivan bonnet rims gas-electric spark plug. Boot spoiler expressway street hood fuel hard top. Cabriolet tyre sensor dragster drive.</p>
+              <p class="card-text">Transmission garage headlight four-wheel drive race car rims. Electric kammback side mirror sedan gas powered patrol car diesel defogger. Brake horsepower high beam hood pickup truck electric car taxi cab electric hot rod.</p>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="buy-button">
-                    <a href="cars.html?id=5" class="btn btn-primary">View Details</a>
-                  </button>
+                <div class="btn-group">  
+                    <a href="cars.html?id=8" class="buy-button">25 000 000 kr</a>
                 </div>
               </div>
             </div>
@@ -300,44 +270,23 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <img src="https://www.europeanprestige.co.uk/blobs/stock/579/images/b16d88a1-ab4f-4c16-b0b5-a224aa6986ac/hi4a9713.jpg?width=900&height=600&t=d7a06e51-49ec-474d-b218-3ed9d686cf7b">
+            <h4>Tesla Cybertruck</h4>
+            <img src="https://www.greendrive-accessories.com/blog/wp-content/uploads/2024/01/Tesla-Cybertruck-Towing-Prowess-and-Range-Revelations.png">
             <div class="card-body">
-              <p class="card-text">Bumper spark plug rotary engine steering wheel low-rider taxi cab. Garage bumper minivan bonnet rims gas-electric spark plug. Boot spoiler expressway street hood fuel hard top. Cabriolet tyre sensor dragster drive.</p>
+              <p class="card-text">Coupe parking sensors minivan fog light sensor race car grille. Engine ignition clutch steering wheel differential gear fog light fog light. Convertible gasoline speedometer defogger dragster headlight.Gas-electric hood soft top tire suspension</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="buy-button">
-                    <a href="cars.html?id=5" class="btn btn-primary">View Details</a>
-                  </button>
+                    <a href="cars.html?id=9" class="buy-button">250 000 kr</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="https://www.europeanprestige.co.uk/blobs/stock/579/images/b16d88a1-ab4f-4c16-b0b5-a224aa6986ac/hi4a9713.jpg?width=900&height=600&t=d7a06e51-49ec-474d-b218-3ed9d686cf7b">
-            <div class="card-body">
-              <p class="card-text">Bumper spark plug rotary engine steering wheel low-rider taxi cab. Garage bumper minivan bonnet rims gas-electric spark plug. Boot spoiler expressway street hood fuel hard top. Cabriolet tyre sensor dragster drive.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="buy-button">
-                    <a href="cars.html?id=5" class="btn btn-primary">View Details</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      
 
      
-   
+      </div>
 
-
+  
     
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
      
@@ -345,14 +294,8 @@
        
       
         <footer class="py-3 my-4">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-          </ul>
-          <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+       
+          <p class="text-center text-body-secondary">© 2024 Hederlige Harrys Bilar, Inc</p>
         </footer>
         </div>
 
