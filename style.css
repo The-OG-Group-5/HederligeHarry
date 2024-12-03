@@ -85,7 +85,11 @@ nav {
 
 
 
+<<<<<<< HEAD
 .carpage {
+=======
+.container {
+>>>>>>> 5ca459bfdced5461a81c75881436acf005301f44
   display: flex; /* Aktivera Flexbox */
   align-items: flex-start; /* Justera innehåll lodrätt */
   gap: 20px; /* Utrymme mellan bilinformation och kalkylator */
