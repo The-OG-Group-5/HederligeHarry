@@ -59,7 +59,7 @@ const cars = [
     {
       id: "8",
       name: "Ford Mustang",
-      image: "https://www.cjponyparts.com/media/images/resource-center/articles/large/what-is-an-eleanor-mustang-header_1.jpg",
+      image: "assets/images/mustang.jpg",
       description: "Eleanor",
       price: "25000000",
       year: "1976"
