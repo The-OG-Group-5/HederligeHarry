@@ -72,15 +72,6 @@ const cars = [
       price: "25000000",
       year: "2021"
     },
-    {
-      id: "10",
-      name: "Volvo V70",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBzvFpwU_qkYHAzEYJGMpF2DUYUdQGSZpvig&s",
-      description: "Practical car",
-      price: "250000",
-      year: "1992"
-  
-    }
 ];
 
 const getCarIdFromUrl = () => {
