@@ -12,6 +12,13 @@ form.addEventListener("submit", (event) => {
 
   const rateFactor = Math.pow(1 + interestRate, numOfPayments);
   const monthlyPayment = (principal * interestRate * rateFactor) / (rateFactor - 1);
+  
+  const formattedPayment = new Intl.NumberFormat('sv-SE', {
+    style: 'currency',
+    currency: 'SEK',
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0  
+  }).format(monthlyPayment);
 
-  paymentAmount.textContent = `Monthly Payment: ${monthlyPayment.toFixed(2)} SEK`;
+  paymentAmount.textContent = `Monthly Payment: ${formattedPayment}`;
 });
