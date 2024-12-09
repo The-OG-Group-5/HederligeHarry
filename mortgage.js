@@ -20,5 +20,5 @@ form.addEventListener("submit", (event) => {
     maximumFractionDigits: 0  
   }).format(monthlyPayment);
 
-  paymentAmount.textContent = `Monthly Payment: ${formattedPayment}`;
+  paymentAmount.textContent = `Månadskostnad: ${formattedPayment}`;
 });
